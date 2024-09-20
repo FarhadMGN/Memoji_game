@@ -1,0 +1,28 @@
+.game-field {
+  width: 50%;
+  max-width: 650px;
+  min-width: 600px;
+
+  height: 50%;
+  max-height: 450px;
+  min-height: 430px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  perspective: 600px;
+}
+
+.game-field__card {
+  height: 140px;
+  width: 140px;
+  display: inline-block;
+}
+
+.header {
+  height: 70px;
+  width: 100%;
+  background: #CFD0CF;
+  text-align: center;
+  padding-top: 32px;
+}

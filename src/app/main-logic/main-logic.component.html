@@ -1,0 +1,17 @@
+<ng-container *ngIf="inGame; else greetTemplate">
+<!--  <app-cards></app-cards>-->
+  <app-general-game [cardNumber]="cardNumber"></app-general-game>
+  <button (click)="onExitClick()">Exit</button>
+</ng-container>
+
+<ng-template #greetTemplate>
+  <app-greet (inGame)="startGame($event)"></app-greet>
+  <ng-container *ngIf="playAgain">
+      <div>
+        Would you like to try again?
+      </div>
+    <button (click)="onYesClick()">Yes</button>
+    <button (click)="onNoClick()">No</button>
+  </ng-container>
+</ng-template>
+

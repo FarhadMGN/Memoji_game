@@ -1,0 +1,96 @@
+.background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #CFD0CF;
+}
+
+header {
+  text-align: center;
+  font-size: 42px;
+  margin: 40px auto 40px auto;
+  color: #434344;
+  font-family: Arial;
+}
+
+.game {
+
+  width: 50%;
+  max-width: 650px;
+  min-width: 600px;
+
+  height: 50%;
+  max-height: 450px;
+  min-height: 430px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  perspective: 600px;
+}
+
+
+.card {
+  width: 25%;
+  position: relative;
+
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+
+
+.front {
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  border: white 5px solid;
+  border-radius: 9px;
+  margin: 12px;
+  background: white;
+  backface-visibility: hidden;
+
+  box-shadow: 1px 1px 5px black;
+  opacity: 100%;
+
+  transform: rotateY(180deg);
+}
+
+.back:hover {
+  opacity: .7;
+}
+
+.back {
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  border: white 5px solid;
+  background: white;
+  border-radius: 9px;
+  margin: 12px;
+  background: linear-gradient(45deg, #22AB93, #19668D);
+  backface-visibility: hidden;
+
+  box-shadow: 1px 1px 5px black;
+  opacity: 100%;
+}
+
+.flip {
+  transform: rotateY(180deg);
+}
+
+.red {
+  background: red;
+}
+
+.green {
+  background: green;
+}
+
+img {
+  display: flex;
+  width: 75px;
+  margin: 26px;
+}

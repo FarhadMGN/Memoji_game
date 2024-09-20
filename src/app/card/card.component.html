@@ -1,0 +1,9 @@
+<div class="card"
+       [ngClass]="card.flipped ? 'flip' : ''"
+  >
+    <div class="back"></div>
+    <div class="front"
+         [ngClass]="card.matched ? 'green': ''"
+    ><img src="{{card.imgSrc}}"></div>
+</div>
+

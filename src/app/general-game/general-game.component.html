@@ -1,0 +1,10 @@
+<div class="header">
+  <p>Memoji</p>
+</div>
+<div class="game-field">
+    <app-card *ngFor="let item of cards"
+      [card]="item"
+      (click)="flipCard(item)"
+      class="game-field__card"
+    ></app-card>
+</div>
