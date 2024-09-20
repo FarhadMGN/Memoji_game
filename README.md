@@ -1,6 +1,7 @@
 # Game
 
 ## Development server
+FIrst of all run `npm i`
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/webpack-dev-server/`. The app will automatically reload if you change any of the source files.
 
